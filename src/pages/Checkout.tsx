@@ -1,6 +1,6 @@
 import { useMemo, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
-import { useCart } from "../cart";
+import { useCart } from "../use-cart";
 import { formatGbp, getProduct } from "../shop";
 
 export function Checkout() {

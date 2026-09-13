@@ -28,12 +28,10 @@ export function ChatDock() {
   const [email, setEmail] = useState("");
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
-  const [msgs, setMsgs] = useState<Msg[]>([]);
+  // lazy init: reads localStorage once, on the first render — no mount
+  // effect, no cascading re-render (set-state-in-effect)
+  const [msgs, setMsgs] = useState<Msg[]>(() => load());
   const bottom = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setMsgs(load());
-  }, []);
 
   useEffect(() => {
     localStorage.setItem(STORE, JSON.stringify(msgs));

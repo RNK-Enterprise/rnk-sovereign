@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../cart";
+import { useCart } from "../use-cart";
 import { bundle, formatGbp, products } from "../shop";
 
 export function Shop() {

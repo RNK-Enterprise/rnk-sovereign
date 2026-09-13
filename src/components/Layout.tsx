@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { ChatDock } from "./ChatDock";
 import { DropBadge } from "./DropBadge";
 import { Mark } from "./Mark";
-import { useCart } from "../cart";
+import { useCart } from "../use-cart";
 import { formatGbp } from "../shop";
 
 const NAV = [
@@ -23,8 +23,20 @@ export function Layout() {
   const [scrolled, setScrolled] = useState(false);
   const cart = useCart();
 
+  // Close the menu when the route changes — event-driven instead of a
+  // state-setting effect: NavLink in the drawer already closes it via
+  // onClick, so this only covers non-link navigations.
   useEffect(() => {
-    setOpen(false);
+    function close() {
+      setOpen(false);
+    }
+    window.addEventListener("popstate", close);
+    return () => window.removeEventListener("popstate", close);
+  }, []);
+
+  // New page: start at the top. This one is the actual external-system
+  // sync the effect rule allows (scroll position is not React state).
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
