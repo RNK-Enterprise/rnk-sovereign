@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400" role="img" aria-label="Resilience Never Kneels — a broadcast mast standing upright from an open book, signal rings rising, server racks at the base.">
+  <defs>
+    <radialGradient id="cglow" cx="50%" cy="30%" r="62%">
+      <stop offset="0%" stop-color="#2ee6c8" stop-opacity="0.2"/>
+      <stop offset="55%" stop-color="#2ee6c8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="1400" fill="#070b14"/>
+  <rect width="1400" height="1400" fill="url(#cglow)"/>
+
+  <!-- signal rings from the mast tip -->
+  <g stroke="#2ee6c8" fill="none" stroke-linecap="round">
+    <path d="M 625.7 389.5 A 80 80 0 0 1 774.3 389.5" stroke-width="7" opacity="0.9"/>
+    <path d="M 573.5 372 A 135 135 0 0 1 826.5 372" stroke-width="5" opacity="0.5"/>
+    <path d="M 521.3 354.5 A 190 190 0 0 1 878.7 354.5" stroke-width="4" opacity="0.25" stroke="#7cff9a"/>
+  </g>
+  <circle cx="700" cy="420" r="10" fill="#7cff9a"/>
+
+  <!-- the mast standing upright from the book -->
+  <g stroke="#2ee6c8" stroke-width="7" fill="#0d1520" stroke-linejoin="round">
+    <path d="M 684 850 L 694 480 L 700 432 L 706 480 L 716 850 Z"/>
+  </g>
+  <g stroke="#2ee6c8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M 700 458 V 590"/>
+  </g>
+  <circle cx="700" cy="612" r="10" fill="none" stroke="#2ee6c8" stroke-width="4"/>
+
+  <!-- flanking server racks -->
+  <g stroke="#2ee6c8" stroke-width="4" fill="#0d1520" opacity="0.8">
+    <rect x="220" y="850" width="64" height="74" rx="4"/>
+    <rect x="298" y="822" width="84" height="102" rx="4"/>
+    <rect x="1116" y="860" width="64" height="64" rx="4"/>
+    <rect x="1018" y="832" width="84" height="92" rx="4"/>
+  </g>
+  <g stroke="#c5d5de" stroke-width="3" stroke-linecap="round" opacity="0.45">
+    <path d="M 232 870 H 272 M 232 886 H 272 M 232 902 H 264"/>
+    <path d="M 310 844 H 370 M 310 862 H 370 M 310 880 H 370 M 310 898 H 350"/>
+    <path d="M 1128 878 H 1168 M 1128 894 H 1168 M 1128 910 H 1156"/>
+    <path d="M 1030 854 H 1090 M 1030 872 H 1090 M 1030 890 H 1090 M 1030 908 H 1070"/>
+  </g>
+  <circle cx="276" cy="862" r="3" fill="#7cff9a"/>
+  <circle cx="376" cy="836" r="3" fill="#7cff9a"/>
+  <circle cx="1094" cy="846" r="3" fill="#7cff9a"/>
+
+  <!-- the open book -->
+  <g stroke="#2ee6c8" stroke-width="7" fill="#0d1520" stroke-linejoin="round">
+    <path d="M 360 850 C 465 815 610 815 700 855 C 790 815 935 815 1040 850 L 1040 930 C 935 895 790 895 700 935 C 610 895 465 895 360 930 Z"/>
+  </g>
+  <g stroke="#2ee6c8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M 700 855 V 935"/>
+  </g>
+  <g stroke="#c5d5de" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <path d="M 420 872 C 480 856 570 856 648 878"/>
+    <path d="M 420 892 C 480 876 570 876 648 898"/>
+    <path d="M 980 872 C 920 856 830 856 752 878"/>
+    <path d="M 980 892 C 920 876 830 876 752 898"/>
+  </g>
+
+  <!-- show name -->
+  <g font-family="'IBM Plex Mono', ui-monospace, monospace" text-anchor="middle" fill="#e7f4f8">
+    <text x="700" y="1120" font-size="64" font-weight="600" letter-spacing="10">RESILIENCE</text>
+    <text x="700" y="1200" font-size="64" font-weight="600" letter-spacing="10">NEVER KNEELS</text>
+  </g>
+  <g stroke="#2ee6c8" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M 480 1150 H 420"/>
+    <path d="M 920 1150 H 980"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#c5d5de">
+    <circle cx="260" cy="300" r="3" opacity="0.6"/>
+    <circle cx="430" cy="200" r="2.5" opacity="0.45"/>
+    <circle cx="1010" cy="230" r="3" opacity="0.6"/>
+    <circle cx="1170" cy="330" r="2.5" opacity="0.4"/>
+    <circle cx="890" cy="160" r="2" opacity="0.35"/>
+  </g>
+</svg>

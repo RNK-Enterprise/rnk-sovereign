@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="A broadcast mast rising from an open book, signal rings spreading from its tip, server racks at its base.">
+  <defs>
+    <radialGradient id="pglow" cx="50%" cy="24%" r="60%">
+      <stop offset="0%" stop-color="#2ee6c8" stop-opacity="0.2"/>
+      <stop offset="55%" stop-color="#2ee6c8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#070b14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#070b14"/>
+  <rect width="1600" height="1000" fill="url(#pglow)"/>
+
+  <!-- signal rings from the mast tip -->
+  <g stroke="#2ee6c8" fill="none" stroke-linecap="round">
+    <path d="M 710.7 192.5 A 95 95 0 0 1 889.3 192.5" stroke-width="6" opacity="0.9"/>
+    <path d="M 654.3 172 A 155 155 0 0 1 945.7 172" stroke-width="5" opacity="0.5"/>
+    <path d="M 597.9 151.5 A 215 215 0 0 1 1002.1 151.5" stroke-width="4" opacity="0.25" stroke="#7cff9a"/>
+  </g>
+  <circle cx="800" cy="225" r="9" fill="#7cff9a"/>
+
+  <!-- the mast: antenna above, pen-nib slit below -->
+  <g stroke="#2ee6c8" stroke-width="6" fill="#0d1520" stroke-linejoin="round">
+    <path d="M 782 710 L 792 300 L 800 240 L 808 300 L 818 710 Z"/>
+  </g>
+  <g stroke="#2ee6c8" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M 800 270 V 430"/>
+  </g>
+  <circle cx="800" cy="455" r="9" fill="none" stroke="#2ee6c8" stroke-width="4"/>
+
+  <!-- flanking server racks -->
+  <g stroke="#2ee6c8" stroke-width="4" fill="#0d1520" opacity="0.8">
+    <rect x="250" y="700" width="70" height="80" rx="4"/>
+    <rect x="340" y="670" width="90" height="110" rx="4"/>
+    <rect x="1280" y="710" width="70" height="70" rx="4"/>
+    <rect x="1170" y="680" width="90" height="100" rx="4"/>
+  </g>
+  <g stroke="#c5d5de" stroke-width="3" stroke-linecap="round" opacity="0.45">
+    <path d="M 262 722 H 308 M 262 740 H 308 M 262 758 H 296"/>
+    <path d="M 354 694 H 416 M 354 714 H 416 M 354 734 H 416 M 354 754 H 396"/>
+    <path d="M 1292 730 H 1338 M 1292 748 H 1338 M 1292 766 H 1326"/>
+    <path d="M 1184 704 H 1246 M 1184 724 H 1246 M 1184 744 H 1246 M 1184 764 H 1226"/>
+  </g>
+  <circle cx="310" cy="712" r="3" fill="#7cff9a"/>
+  <circle cx="422" cy="684" r="3" fill="#7cff9a"/>
+  <circle cx="1240" cy="694" r="3" fill="#7cff9a"/>
+
+  <!-- the open book the mast stands on -->
+  <g stroke="#2ee6c8" stroke-width="6" fill="#0d1520" stroke-linejoin="round">
+    <path d="M 420 700 C 540 660 700 660 800 706 C 900 660 1060 660 1180 700 L 1180 790 C 1060 750 900 750 800 796 C 700 750 540 750 420 790 Z"/>
+  </g>
+  <g stroke="#2ee6c8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M 800 706 V 796"/>
+  </g>
+  <g stroke="#c5d5de" stroke-width="3.5" stroke-linecap="round" opacity="0.5">
+    <path d="M 486 726 C 560 706 660 706 744 732"/>
+    <path d="M 486 750 C 560 730 660 730 744 756"/>
+    <path d="M 1114 726 C 1040 706 940 706 856 732"/>
+    <path d="M 1114 750 C 1040 730 940 730 856 756"/>
+  </g>
+
+  <!-- stars -->
+  <g fill="#c5d5de">
+    <circle cx="300" cy="220" r="3" opacity="0.6"/>
+    <circle cx="480" cy="140" r="2.5" opacity="0.45"/>
+    <circle cx="1180" cy="180" r="3" opacity="0.6"/>
+    <circle cx="1360" cy="260" r="2.5" opacity="0.4"/>
+    <circle cx="1060" cy="110" r="2" opacity="0.35"/>
+  </g>
+</svg>
