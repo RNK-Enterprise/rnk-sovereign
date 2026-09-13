@@ -1,0 +1,2 @@
+# managed by rnk-sovereign deploy/install-cron.sh — do not edit by hand
+45 7 * * 0 $HOME/bin/env-perms-watch.sh >> $HOME/env-perms-watch/cron.log 2>&1
