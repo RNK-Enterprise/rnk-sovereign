@@ -108,6 +108,8 @@ sumfile sha_signup_mw       "$HOME/rnk-sovereign/server/signup-middleware.ts"
 sumfile sha_sovereign_pkg   "$HOME/rnk-sovereign/package.json"
 sumfile sha_site_server     "$HOME/rnkstudios-site/server.js"
 sumfile sha_site_ecosystem  "$HOME/rnkstudios-site/ecosystem.config.js"
+# live tunnel config — a clobber here silently drops hostnames on next restart
+sumfile sha_tunnel_yml      "$HOME/.cloudflared/rnkstudios-web.yml"
 
 # ---------- 5. disk ----------
 pct=$(df --output=pcent / | tail -1 | tr -dc "0-9")
