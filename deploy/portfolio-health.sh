@@ -7,8 +7,8 @@
 # lands in ~/portfolio-health/latest.txt. Any failure writes ALERT.txt and
 # exits 1 so cron mail picks it up.
 #
-# Install (on box):  ~/bin/portfolio-health.sh            # one-shot
-# Cron:              15 7 * * * $HOME/bin/portfolio-health.sh >> $HOME/portfolio-health/cron.log 2>&1
+# Install (on box):  bash deploy/install-cron.sh  (syncs this script to ~/bin
+#                     and merges the cron entry — idempotent)
 
 set -u
 DIR="$HOME/portfolio-health"

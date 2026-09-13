@@ -1,0 +1,2 @@
+# managed by rnk-sovereign deploy/install-cron.sh — do not edit by hand
+15 7 * * * $HOME/bin/portfolio-health.sh >> $HOME/portfolio-health/cron.log 2>&1
