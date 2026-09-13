@@ -1,10 +1,11 @@
 # rnkstudios-web tunnel — connector runs on atlas (192.168.1.202) under pm2
-# (rnk), ingress for the whole studios family. All five hostnames are live:
+# (rnk), ingress for the whole studios family. All six hostnames are live:
 #   apex+www → 3005 (rnk-sovereign hub)
 #   adapt → 8785 (Curator web, pm2: rnk-adapt — deploy per
 #     The Curator/rnk-minecraft-bridge/deploy/DEPLOYMENT.md)
 #   nueron → 8765 (Nueron server.py, pm2: nueron)
 #   gift  → 8770 (The Gift server.py, pm2: the-gift)
+#   classic → 3013 (retired rnkstudios-site archive, pm2: rnkstudios-site)
 tunnel: 40fe8256-ae3d-43c0-98d8-5dbf9a70a083
 credentials-file: /home/rnk/.cloudflared/40fe8256-ae3d-43c0-98d8-5dbf9a70a083.json
 
@@ -19,4 +20,6 @@ ingress:
     service: http://localhost:8765
   - hostname: gift.rnkstudios.uk
     service: http://localhost:8770
+  - hostname: classic.rnkstudios.uk
+    service: http://localhost:3013
   - service: http_status:404
